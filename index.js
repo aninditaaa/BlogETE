@@ -7,7 +7,7 @@ const {authRouter} = require("./src/auth/router");
 const {blogRouter} = require("./src/blogs/router");
 const {commentRouter} = require("./src/comments/router");
 
-mongoose.connect("mongodb://127.0.0.1:27017/blog");
+mongoose.connect("mongodb+srv://anindita:ANINDITA2002@cluster0.qhskr.mongodb.net/?retryWrites=true&w=majority");
 mongoose.connection.on("connected", ()=>{
     console.log("DB Connected with Blog")
 })
